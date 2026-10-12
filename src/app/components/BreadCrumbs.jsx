@@ -26,7 +26,7 @@ const BreadCrumbs = async ({ product }) => {
                     <Link className="hover:underline" href={`/category/${currentCategory.id}`}>{currentCategory.nameBn}</Link>
                 )
             }
-            <span> <Image src={"/Vector.svg"} alt="Arrow Right" width={6} height={7} /> </span>
+            <span> <Image src={"/Vector.jpeg"} alt="Arrow Right" width={6} height={7} /> </span>
             <span className="text-gray-800 px-2">{product.nameBn}</span>
         </div>
     );
