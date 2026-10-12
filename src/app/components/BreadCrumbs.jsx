@@ -20,7 +20,7 @@ const BreadCrumbs = async ({ product }) => {
     return (
         <div className="text-xs sm:text-sm text-gray-500 flex items-center space-x-2 space-x-reverse font-medium">
             <Link href="/" className="hover:underline">হোম</Link>
-            <span> <Image src={"/Vector.svg"} alt="Arrow Right" width={6} height={7} /> </span>
+            <span> <Image src={"/Vector.jpeg"} alt="Arrow Right" width={6} height={7} /> </span>
             {
                 currentCategory && (
                     <Link className="hover:underline" href={`/category/${currentCategory.id}`}>{currentCategory.nameBn}</Link>
