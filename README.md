@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📈 বাজার দর / BazarDor
 
-## Getting Started
+A Bangla-first web app that tracks daily market prices of everyday products in Bangladesh — browse prices, see what went up or down today, and view detailed product info.
 
-First, run the development server:
+## 🛠️ Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js** (App Router) — framework & routing
+- **React** — UI components
+- **Better Auth** — email/password + Google/GitHub authentication
+- **Tailwind CSS** — styling
+- **react-hot-toast** — notifications
+- **Programming Hero Open API** — product & category data
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. 📊 **Daily price tracking** — live prices with ▲/▼ change badges, plus top gainers ("আজ দাম বেড়েছে") and top losers ("আজ দাম কমেছে") sections
+2. 🔐 **Full authentication** — email/password and Google/GitHub login with protected product-detail routes
+3. 👤 **User profile** — update name, avatar with initials fallback, secure sign-out
+4. 🌐 **Bangla-first UI** — Bangla numerals, real-time Bangla date, localized units (কেজি, লিটার, পিস)
+5. ⚡ **Polished UX** — skeleton loaders, toast notifications, price marquee ticker, URL-driven category navigation
