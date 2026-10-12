@@ -1,5 +1,5 @@
 
-// import BreadCrumbs from "@/app/components/BreadCrumbs";
+import BreadCrumbs from "../../components/BreadCrumbs";
 import { Hind_Siliguri } from "next/font/google";
 import { Suspense } from "react";
 export const instant = false;
@@ -89,7 +89,7 @@ async function ProductDetailContent({ id }) {
 
     return (
         <div className="space-y-6">
-            {/* <BreadCrumbs product={product}/> */}
+            <BreadCrumbs product={product}/>
 
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-start space-x-4 space-x-reverse">
