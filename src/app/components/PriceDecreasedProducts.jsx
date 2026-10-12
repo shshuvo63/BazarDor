@@ -44,10 +44,11 @@ export default function PriceDecreasedProducts() {
     fetch('https://openapi.programming-hero.com/api/bazardor/products')
       .then((res) => res.json())
       .then((data) => {
-        const sortedProducts = [...data]
-          .sort((a, b) => a.today - b.today)
+        const decreasedProducts = [...data]
+          .filter((item) => item.change?.dir === 'down')
+          .sort((a, b) => (b.change?.pct || 0) - (a.change?.pct || 0))
           .slice(0, 6);
-        setProducts(sortedProducts);
+        setProducts(decreasedProducts);
       })
       .catch((err) => console.error(err))
       .finally(() => setLoading(false));
